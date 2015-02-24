@@ -1,12 +1,64 @@
-.container2{
-  width:400px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 60px;}
+
+
+.logo {
+  background-color:#f8a0af !important;
+  width:200px;
+    font-family: 'Open Sans', sans-serif;
+font-weight:300;
+}
+
+.header {
+}
+
+.nav
+{
+  font-family:'Open Sans', sans-serif;
+}
+
+
+.nav-pills {
+  background-color:white
+  color: black !important;
+}
+
+.nav-pills>li.active> a {
+color: black !important;
+background-color:white !important;
+border-style: solid;
+    border-width: 1px;
+    border-color:#f8a0af;
+}
+
+/*utseende på hoverlänken*/
+.nav-pills a:hover {
+    background-color: blue !important;
+}
+
+/*utseende på hoverlänken*/
+
+.nav-pills > li.active a:hover {
+    background-color: blue !important;
+}
+
+.jumbotron {
+  background-color:#f8a0af !important;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbocontainer {
+
+  max-width: 730px;
+  margin-right: auto;
+margin-left: auto;
+}
 
 .bigtext {
-font-size: 35px;
+  font-size:45px;
+   text-align: left;
 }
+
+
 
 .topcontainter {text-align:center;}
 
@@ -21,6 +73,7 @@ padding-bottom:20px;
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -32,9 +85,7 @@ body {
 }
 
 /* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   padding-bottom: 19px;
@@ -50,6 +101,7 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
@@ -60,15 +112,6 @@ body {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}
 
 /* Supporting marketing content */
 .marketing {
