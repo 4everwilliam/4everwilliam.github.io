@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 
 .logo {
@@ -27,19 +28,21 @@ color:white;
 color: black !important;
 background-color:white !important;
 border-style: solid;
+border-radius: 15px;
     border-width: 1px;
     border-color:#f8a0af;
+    
 }
 
 /*utseende på hoverlänken*/
 .nav-pills a:hover {
-    background-color: blue !important;
+    background-color: #f4f4f4 !important;
 }
 
 /*utseende på hoverlänken*/
 
 .nav-pills > li.active a:hover {
-    background-color: blue !important;
+    background-color: #f4f4f4 !important;
 }
 
 /*kanske använda   background-image: url("images/M.png"); på jumbotronen istället? */
@@ -93,6 +96,14 @@ margin-left: auto;
   top: 50%;
   transform: translateY(-50%);
 }
+=======
+.container2{
+  width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+        }
+>>>>>>> Stashed changes
 
 .bigtext {
   font-size:45px;
@@ -137,6 +148,7 @@ body {
 .footer {
   padding-right: 15px;
   padding-left: 15px;
+
 }
 
 /* Custom page header */
