@@ -41,6 +41,9 @@ border-style: solid;
     background-color: blue !important;
 }
 
+/*kanske använda   background-image: url("images/M.png"); på jumbotronen istället? */
+
+
 .jumbotron {
   background-color:#f8a0af !important;
   background-image: url("images/M.png");
