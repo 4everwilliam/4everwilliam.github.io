@@ -14,6 +14,7 @@ color:white;
 .nav
 {
   font-family:'Open Sans', sans-serif;
+  margin-top:20px;
 }
 
 
@@ -51,14 +52,46 @@ border-style: solid;
    background-position: center; 
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-  padding-top:200px !important;
+  margin-top:80px !important;
+  height:1000px !important;
+  background-size: contain
+
 }
+
+.jumbotron2 {
+  background-color:#f8a0af !important;
+  background-image: url("http://www.eva.mpg.de/evolution/images/3-d-tooth.jpg");
+  height:500px !important;
+  background-size: contain;
+    background-repeat: no-repeat;
+       background-position: center; 
+
+
+
+}
+
+
+.jumbotron3 {
+  background-color:#f8a0af !important;
+  background-image: url("images/bror.png");
+  height:500px !important;
+  background-size: contain;
+    background-repeat: no-repeat;
+       background-position: center; 
+
+
+
+}
+
 
 .jumbocontainer {
 
   max-width: 730px;
   margin-right: auto;
 margin-left: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .bigtext {
@@ -85,6 +118,11 @@ border-style: solid;
 text-align:center;
 padding-bottom:20px;
 
+}
+
+.navbar-default {
+background-color: white !important;
+border-color: white !important;
 }
 
 
@@ -115,7 +153,6 @@ body {
 .footer {
 background:black;
 color:white;
-  position:fixed;
    left:0px;
    bottom:0px;
    width:100%;
