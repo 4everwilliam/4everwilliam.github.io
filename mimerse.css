@@ -22,13 +22,14 @@ color:white;
 .nav-pills {
   background-color:white
   color: black !important;
+  border-radius: 15px;
+
 }
 
 .nav-pills>li.active> a {
 color: black !important;
 background-color:white !important;
 border-style: solid;
-border-radius: 15px;
     border-width: 1px;
     border-color:#f8a0af;
     
