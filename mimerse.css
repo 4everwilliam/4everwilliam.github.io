@@ -48,6 +48,7 @@ border-style: solid;
 
 /*kanske använda   background-image: url("images/M.png"); på jumbotronen istället? */
 
+.fullpage{height:75vh !important;}
 
 .jumbotron {
   background-color:#f8a0af !important;
@@ -58,31 +59,45 @@ border-style: solid;
   border-bottom: 1px solid #e5e5e5;
   margin-top:80px !important;
   height:100vh !important;
-  background-size: contain
+  background-size: contain;
+  margin-bottom:0px !important;
 }
+
+.jumbotron1 {
+  background-color:#f8a0af !important;
+  background: url("http://wpmlabs.com/wp-content/uploads/2014/11/Laboratory1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+height:25vh 
+}
+
+
 
 .jumbotron2 {
   background-color:#f8a0af !important;
-  background-image: url("http://www.eva.mpg.de/evolution/images/3-d-tooth.jpg");
-  height:500px !important;
-  background-size: contain;
-    background-repeat: no-repeat;
-       background-position: center; 
-
+  background: url("http://www.eva.mpg.de/evolution/images/3-d-tooth.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+height:25vh 
 
 
 }
 
 
 .jumbotron3 {
-  background-color:#f8a0af !important;
-  background-image: url("images/bror.png");
-  height:500px !important;
-  background-size: contain;
-    background-repeat: no-repeat;
-       background-position: center; 
-
-
+    background-color:#f8a0af !important;
+  background: url("images/bror.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+height:25vh 
 
 }
 
@@ -96,17 +111,16 @@ margin-left: auto;
   top: 50%;
   transform: translateY(-50%);
 }
-=======
+
 .container2{
   width:400px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 60px;
         }
->>>>>>> Stashed changes
 
 .bigtext {
-  font-size:45px;
+  font-size: 45px !important;
    text-align: left;
 }
 
