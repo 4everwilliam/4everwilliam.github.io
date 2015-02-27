@@ -104,7 +104,7 @@ height:25vh
 
 .jumbocontainer {
 
-  max-width: 730px;
+  max-width: 930px;   /* bestämmer hur vänsterställda rubriktexterna är*/
   margin-right: auto;
 margin-left: auto;
   position: relative;
