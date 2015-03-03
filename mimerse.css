@@ -84,8 +84,8 @@ border-style: solid;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   margin-top:80px !important;
-  height:100vh !important;
-  background-size: contain;
+ height:25vh !important;
+   background-size: cover;
   margin-bottom:0px !important;
 }
 
@@ -170,8 +170,10 @@ border-style: solid;
 .topcontainter {text-align:center;}
 
 #logos {
-text-align:center;
-padding-bottom:20px;
+filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
 
 }
 
