@@ -48,8 +48,9 @@ c u in the metaverse
 				menu: '#menu',
 				afterLoad: function(anchorLink, index){
 					//section 2
-					if(index == 2){
+					if(index == 1){
 						//moving the image
+
 						$('#section1').find('p').delay(500).animate({
 							left: '0%'
 						}, 1500, 'easeOutExpo');
@@ -63,7 +64,7 @@ c u in the metaverse
 					//section 3
 					if(anchorLink == '3rdPage'){
 						//moving the image
-						$('#section2').find('.intro').delay(500).animate({
+						$('#section2').find('p').delay(500).animate({
 							left: '0%'
 						}, 1500, 'easeOutExpo');
 					}
@@ -81,11 +82,16 @@ c u in the metaverse
 
 
 <div id="menurow">
-<div id="menucontainer">
-          <div class="logo pull-left">
 
-          <h1 class=""><img src="images/logga.png" height=50px> mimerse</h3>
-        </div>     
+<div id="menucontainer">
+<div class="logo pull-left">
+<div class="hi"></div></div>     
+
+<div class="logo pull-left">
+ <h1 class="">
+mimerse
+</h1>
+</div>     
 
 <ul id="menu" >
 	<li data-menuanchor="firstPage" ><a href="#firstPage">Det vi gör</a></li>
@@ -110,7 +116,6 @@ c u in the metaverse
 
 
 <div class="row marketing">
-
         <div class="col-lg-6">
           <h4><img src="glyphs/newformat.png" style="height:40px"></span>  Nytt format - nya möjligheter</h4>
           <p>
