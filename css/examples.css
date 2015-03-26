@@ -60,7 +60,7 @@ p{
 }
 
 
-/* MENU*/
+/* MENYN*/
 #menu li {
 	display:inline-block;
 	margin: 10px;
@@ -109,7 +109,19 @@ color: black;
 	top:0;
 	height: 70px;
 	z-index: 70;
-	width: 600px;
+	padding: 0;
+	background-color:white;
+	position: absolute;
+	right: 10px;
+
+}
+
+
+#menurow
+{
+	height: 70px;
+	z-index: 70;
+	width: 100%;
 	padding: 0;
 	background-color:white;
 	position: absolute;
@@ -120,13 +132,20 @@ right: 0;
 
 }
 
-
-#testcontainer
+#menucontainer
 {
+	height: 70px;
+	z-index: 70;
+	width: 1170px; /*ska vara lika bred som den diven som har kolumnerna*/
+	padding: 0;
+	background-color:white;
+	position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
 
 }
-
-
 
 
 /*SECTIONS*/
@@ -189,3 +208,21 @@ margin-left: auto;
 vertical-align: top;
 text-align: left;
 }
+
+
+.logo h1 {
+    font-family: 'Open Sans', sans-serif;
+color:black;
+ font-weight: 100 !important;
+  font-size: 25px !important;
+  letter-spacing: 0.5px;
+  margin-top:5px;
+  
+}
+.logo {
+
+padding:0px 0px 0px 20px;
+margin-bottom: -1px;
+
+}
+ 
