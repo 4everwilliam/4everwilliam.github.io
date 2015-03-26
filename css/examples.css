@@ -15,29 +15,12 @@ table {
 fieldset,img {
     border: 0;
 }
-address,caption,cite,code,dfn,em,strong,th,var {
-    font-weight: normal;
-    font-style: normal;
-}
-strong{
-	font-weight: bold;
-}
 ol,ul {
     list-style: none;
     margin:0;
     padding:0;
 }
-caption,th {
-    text-align: left;
 
-}
-h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
-    font-size: 100%;
-    margin:0;
-    padding:0;
-    color:#444;
-}
 q:before,q:after {
     content:'';
 }
@@ -48,7 +31,7 @@ abbr,acronym { border: 0;
 /* Custom CSS
  * --------------------------------------- */
 body{
-  font-family:'Open Sans', sans-serif;
+  font-family:'Open Sans', sans-serif !important;
 	color: #333;
 	color: rgba(0,0,0,0.5);
 }
@@ -58,9 +41,11 @@ body{
 	width: 960px;
 	position: relative;
 }
+
 h1{
 	font-size: 6em;
 }
+
 p{
 	font-size: 1em;
 }
@@ -72,6 +57,9 @@ p{
 .section{
 	text-align:center;
 }
+
+
+/* MENU*/
 #menu li {
 	display:inline-block;
 	margin: 10px;
@@ -154,14 +142,13 @@ filter: gray; /* IE6-9 */
 
 .jumbotron {
   background-color:#f8a0af !important;
-  background-image: url("images/M.png");
+  background-image: "images/M.png";
   background-repeat: no-repeat;
    background-position: center; 
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   margin-top:80px !important;
  height:25vh !important;
-   background-size: 1400px;
   margin-bottom:0px !important;
 }
 
