@@ -1,109 +1,100 @@
+<!-- To do William:
+*Lägga på padding top på jumbotronene för att kompensera för menyn
+* lägg in litet javascript som uppdaterar "current" på topmenyn efter vilken sektion som är uppe just nu
+* lägg in script för animerade loggan på menyn
+*fixa mobil, fixa responsive
+* aligna kolumnerna men hur? inväntar design
+*dölj scrollbaren, undersök om man kan scrolla hela sidan i taget
+*göra så att "mimerse-texten" på menyn försvinner på små skärmar.
+
+
+To do arthur:
+fixa glyphs till andra sidan också. Kompaitbel hårdvara bör vara en VR-headset glyph ;)
+
+
+-->
 
 <!DOCTYPE html>
  <!--
- zzzzzzzzzzzzzzzzzzzz
-....go learn 3d
-
  _      __(_) / (_)___ _____ ___ 
 | | /| / / / / / / __ `/ __ `__ \
 | |/ |/ / / / / / /_/ / / / / / /
 |__/|__/_/_/_/_/\__,_/_/ /_/ /_/ 
 NULLIUS IN VERBA 
-c u in the metaverse
 -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+	<meta name="application-name" content="mimerse"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
 
-<html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Callbacks - fullPage.js</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage callback function." />
-	<meta name="keywords"  content="fullpage,jquery,demo,callbac,function,event" />
-	<meta name="Resource-type" content="Document" />
+    <title>mimerse</title>
+    <!-- Custom styles for this template -->
+    <link href="mimerse.css" rel="stylesheet">
 
-
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/examples.css" />
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
-
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="js/examples.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFFF', '#FFFFFF'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-				menu: '#menu',
-/*				afterLoad: function(anchorLink, index){
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
 
-					//section 2
-					if(index == 2){
-						//moving the image
-						$('#section1').find('img').delay(500).animate({
-							left: '0%'
-						}, 1500, 'easeOutExpo');
-
-						$('#section1').find('p').first().fadeIn(1800, function(){
-							$('#section1').find('p').last().fadeIn(1800);
-						});;
-
-					}
-
-					//section 3
-					if(anchorLink == '3rdPage'){
-						//moving the image
-						$('#section2').find('.intro').delay(500).animate({
-							left: '0%'
-						}, 1500, 'easeOutExpo');
-					}
-					
-				}*/
-			});
-
-		});
-	</script>
-
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
+
 <body>
 
-
-
-<div id="testcontainter">
-<ul id="menu">
-<img src="images/logga.png" height=50px> mimerse</h3>
-	<li data-menuanchor="firstPage"><a href="#firstPage">Det vi gör</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Vad vi erbjuder</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Om oss</a></li>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+<ul class="nav nav-pills pull-right">
+<li role="presentation" class="active"><a href="#jumbotron">Det vi gör</a></li>
+<li role="presentation"><a href="#jumbotron2">Vad vi erbjuder</a></li>
+<li role="presentation"><a href="#jumbotron3">Om oss</a></li>
 </ul>
-</div>
+          </button>
+          <div class="logo pull-left">
 
+          <h1 class=""><img src="images/logga.png" height=50px> mimerse</h3>
+        </div>        </div>
 
-<div id="fullpage">
-<div class="section " id="section0">
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
 <div class="jumbotron">
 <div class="jumbocontainer ">
 <div class="bigtext">Virtuella verkligheter kommer <br> för evigt att förändra psykologisk behandling och forskning.</div>
 </div>
+
 </div>
 
-<div class="container fullpage">
 
 
-<div class="row marketing">
+
+
+      <div class="container fullpage">
+
+      <div class="row marketing">
 
         <div class="col-lg-6">
           <h4><img src="glyphs/newformat.png" style="height:40px"></span>  Nytt format - nya möjligheter</h4>
@@ -113,7 +104,7 @@ c u in the metaverse
 
           <h4><img src="glyphs/kunskap.png" style="height:40px"></span>  Integrerad kunskap och kompetens</h4>
          <p>
-         Vi har spetskompetens inom utveckling av virtuella interaktiva upplevelser och psykologisk forskning. Vi arbetar med spelmotorer och låter kompetens från spelindustrin möta beteendevetenskapliga metoder.
+         Vi är erfarena entreprenörer med spetskompetens inom utveckling av virtuella interaktiva upplevelser och psykologisk forskning. Vi arbetar med spelmotorer och låter kompetens från spelindustrin möta beteendevetenskapliga metoder med ambition att vara spjutspets i världen.
          </p> 
 
           <h4><img src="glyphs/evidensbasering.png" style="height:40px"></span>  Evidensbasering</h4>
@@ -137,11 +128,9 @@ c u in the metaverse
           <p>
           Vi är i dagsläget det företag i Sverige med mest kompetens inom detta snabbt växande område. Vår målsättning är att få in digital teknik i traditionella sammanhang.
           </p>
-          </div>
-                    </div>
+        </div>
 
-<div class="row marketing">
-
+      </div>
 
 <div id="logos">
 <div class="col-lg-3" style="text-align:center">
@@ -159,41 +148,27 @@ c u in the metaverse
 <div class="col-lg-3" style="text-align:center">
 <img  height="75"src="http://jondetech.se/images/vinnova_logotyp_small.jpg" alt="">
 </div>
-          </div>
+</div>
 
+<div class="col-lg-12" style="text-align:center;margin-top:150px">
+<img height="25" class="center" src="images/down.png">
 </div>
 
 
+              
 
-
-
-
-
-
-
-</div>
-</div>
-
-
-
-
-
-
-
-
-	<div class="section" id="section1">
-
-
-
-<div class="jumbotron" id="jumbotron">
+</div> <!-- Slut container 1-->
+<div class="jumbotron2" id="jumbotron2">
 <div class="jumbocontainer ">
 <div class="bigtext">
-     Vi låter dig använda virtuella verkligheter i din yrkesutövning.  
+     Vi gör det lätt för dig att använda virtuella verkligheter i din yrkesutövning.  
 </div>  
 </div>                
 </div>
-<div class="container fullpage">
+   <div class="container fullpage">
 
+
+<br>
       <div class="row marketing">
         <div class="col-lg-6">
           <h4><img src="glyphs/glyphicons-498-glasses.png" height:40px> Skräddarsydda simuleringar</h4>
@@ -245,27 +220,18 @@ c u in the metaverse
         </div>
       </div>
 
-      </div>
 
 
+</div> <!-- Slut container 1-->
 
 
-
-
-
-
-
-
-
-	</div>
-	<div class="section" id="section2">
-	<div class="jumbotron" id="jumbotron">
+<div class="jumbotron3" id="jumbotron3">
 <div class="jumbocontainer ">
 <div class="bigtext">
-"De ska se till att VR blir nästa svenska exportmarknad"</div>  
+     Vi är ett team riktigt sköna grabbar *asg*
+</div>  
 </div>                
 </div>
-	
 <div class="container fullpage">
       <div class="row marketing">
 
@@ -310,12 +276,34 @@ Vår målsättning är att uppnå en sund tillväxt och när organisationen är 
 Projektannonsering på SUs hemsida  <br><br>
 
 
+    </div> <!-- /container -->
 
 
+      <footer class="footer">
+            <div class="container">
+<div class="col-lg-4">
+        <img src="images/logga.png" height=20px>
 
-	</div>
-</div>
+        <p>&copy; mimerse AB 2014</p>
+
+        </div>
+        <div class="col-lg-4">
+        <p>Kontakt</p>
+        <p>info@mimerse.com
+        +46739850665<br>
+        Twitter eller Facebook
+        </div>
+        <div class="col-lg-4">
+        <p>Adress</p>
+         Hangövägen 18<br>
+         11324
+                  <p>Stockholm</p>
+
+        </div>
+      </footer>
 
 
-</body>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
