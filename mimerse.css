@@ -55,6 +55,8 @@ border-style: solid;
     background-color: #f8a0af !important;
       border-radius: 15px;
       color:white !important;
+          border-width: 1px;
+          border-color: black;
 }
 
 .nav-pills a{
