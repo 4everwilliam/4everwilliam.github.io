@@ -174,12 +174,19 @@ filter: gray; /* IE6-9 */
 
 
 .jumbotron {
-  background-color:#f8a0af !important;
-  background-image: "images/M.png";
+  background: #f8a0af; /* Old browsers */
+background: -moz-linear-gradient(top, #f8a0af 0%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8a0af), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f8a0af 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f8a0af 0%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #f8a0af 0%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom, #f8a0af 0%,#ffffff 100%); /* W3C */
+
+
   background-repeat: no-repeat;
    background-position: center; 
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+/*  border-bottom: 1px solid #e5e5e5;*/
   margin-top:70px !important;
  height:25vh !important;
   margin-bottom:0px !important;
@@ -198,7 +205,7 @@ margin-left: auto;
 
 .bigtext {
   font-size: 40px !important;
-   text-align: left;
+   text-align: center;
    font-weight: 100;
    color:black;
    margin-left: -10px;
@@ -215,7 +222,7 @@ text-align: left;
     font-family: 'Open Sans', sans-serif;
 color:black;
  font-weight: 100 !important;
-  font-size: 25px !important;
+  font-size: 40 !important;
   letter-spacing: 0.5px;
   margin-top:17px;
   
@@ -236,7 +243,7 @@ margin-bottom: -1px;
 .hi {
     width: 83px;
     height: 60px;
-    background-image: url("https://files.slack.com/files-pri/T02R871LW-F0460B9LV/logo-sprite2.png");
+    background-image: url("images/black_outline.png");
     
     -webkit-animation: play 1s steps(10) infinite;
        -moz-animation: play 1s steps(10) infinite;
